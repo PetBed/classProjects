@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Neptune</title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="nav-bar">
+            <a href="../../" id="back-button">&laquo; Back</a>
+            <a href="#intro">Overview</a>
+            <a href="#description">Description</a>
+            <a href="#fun-facts">Fun Facts</a>
+            <a href="#simulation">Simulation(s)</a>
+            <a href="#footnotes">Footnotes</a>
+        </div>
+
+        <div id="main-div">
+            <h1>Neptune: The Big Blue Planet</h1>
+
+            <div id="intro">
+                <h3>Overview</h3>
+                <p><strong>Neptune</strong> is the eighth planet from the Sun and is the most distant planet in our solar system.
+                    More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye.
+                </p>
+            </div>
+            <div id="description">
+                <h3>Description</h3>
+                <p>Neptune is formed around 4.5 billion years ago. With a radius of 15,299.4 miles (24,622 kilometers), Neptune is about four times wider than Earth.
+                    From an average distance of 2.8 billion miles (4.5 billion kilometers), Neptune is 30 astronomical units away from the Sun.<a href="#footnotes">*</a>. 
+                    It takes about 4 hours for light from the Sun to reach Neptune. <br>
+                </p>
+                <iframe src='https://solarsystem.nasa.gov/gltf_embed/2364' width='60%' height='450px' frameborder='0'></iframe>
+                <div>
+                    <p>
+                        A 3D model of Neptune, an ice giant planet.
+                        <br>Credit: NASA Visualization Technology Applications and Development (VTAD)<br>
+                    </p>
+                </div>
+                <p>
+                    <strong>Potential for Life:</strong> <br>
+                    Neptune's environment is not too conducive to life as we know it. The temperatures, pressures and materials are most likey too 
+                    extreme and volatile for living organisms to adapt to.<br><br>
+                    <strong>Orbit and Rotation:</strong>  <br>
+                    A day on Neptune takes about 16 hours, and completes an orbit around the Sun in about 165 Earth years. Sometimes Neptune is even farther 
+                    from the Sun than dwarf planet Pluto. Pluto's highly eccentric, oval-shaped orbit brings it inside Neptune's orbit for a 20-year period every 248 Earth years. 
+                    Saturn's axis of rotation is tilted by 28 degrees, which is similar to Earth's. 
+                    Since the year is so long, each of the four seasons lasts for over 40 years.<br><br>
+                    <strong>Structure:</strong>  <br>
+                    Neptune is one of the two ice giants in the outer solar system. 80% or more of its mass is made up from hot dense fluid 
+                    of "icy" materials - water, methane and ammonia. Of all the giant planets, Neptune is the densest.<br><br>
+                    <strong>Temperatures:</strong>  <br>
+                    The temperature on Neptune is around minus 189 degrees Celsius (minus 373 degrees Fahrenheit), with its largest moon, Triton, having a temperature 
+                    of minus 199 degrees Celsius (391 degrees Fahrenheit), holding the record of the coldest temperature measured in the solar system.<br><br>
+                    <strong>Surface:</strong> <br>
+                    As a gas giant, Neptune doesn’t have a true surface. The planet is mostly swirling gases and liquids deeper down. <br><br>
+                    <strong>Atmosphere:</strong> <br>
+                    Neptune's atmosphere is made up mostly of hydrogen and helium with a little bit of methane. Neptune is our solar system's windiest world, 
+                    with wind speeds of more than 1,200 miles per hour (2,000 kilometers per hour). Its winds can be three times stronger than Jupiter's and 
+                    nine times stronger than Earth's. <br><br>
+                    <strong>Magetosphere:</strong> <br>
+                    The main axis of Neptune's magnetic field is tipped over by about 47 degrees compared with the planet's rotation axis. The magnetic field of Neptune is 
+                    about 27 times more powerful than that of Earth<br><br>
+                    <strong>Moons: </strong> <br>
+                    Neptune as 14 known moons. With its largest moon being Triton. Triton is the only large moon in the solar system that circles its planet in a 
+                    direction opposite to the planet's rotation. Triton is extremely cold, and yet, despite this deep freeze at Triton, Voyager 2 discovered geysers 
+                    spewing icy material upward more than 5 miles (8 kilometers).<br><br>
+                    <strong>Rings: </strong> <br>
+                    Neptune has at least five main rings and four prominent ring arcs that we know of so far. <a href="#footnotes">**</a>.
+                </p>
+            </div>
+            <div id="fun-facts">
+                <h3>Fun Facts!</h3>
+                <ul>
+                    <li>Neptune is the smallest of the gas giants.</li>
+                    <li>There are no plans to visit Neptune again.</li>
+                    <li>Neptune is the last discovered planet in our solar system.</li>
+                    <li>Neptune is named after the Roman god of water and seas, Neptune.</li>
+                </ul>
+            </div>
+
+            <div id="simulation">
+                <div id="gravity">
+                    <h3>Simulations</h2>
+
+                    <p>The gravity on Saturn is 11.15m/s, click the Run Simulation button to see a 
+                        simulation of an object falling on Saturn!</p>
+                    <div id="gravity-sim">
+                        <canvas id="canvas-gravity"></canvas>
+                        <br>
+                        <div id="gravity-button">
+                            <a onclick=gravitySimulation(11.15)>Run Simulation!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footnotes">
+                <h3>Footnotes:</h3>
+                    <p><a href="#intro">*</a>One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth.
+                    </p>
+                    <p><a href="#description">**</a>The rings are name alphabetically in the order they were discovered.  The main rings are A, B, and C. 
+                        Rings D, E, F, and G are fainter and more recently discovered.</p>
+            </div>
+        </div>
+
+
+        <script src="code.js"></script>
+    </body>
+</html>

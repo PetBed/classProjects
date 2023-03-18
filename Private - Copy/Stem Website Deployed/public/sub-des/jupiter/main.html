@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jupiter</title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="nav-bar">
+            <a href="../../" id="back-button">&laquo; Back</a>
+            <a href="#intro">Overview</a>
+            <a href="#description">Description</a>
+            <a href="#fun-facts">Fun Facts</a>
+            <a href="#simulation">Simulation(s)</a>
+            <a href="#footnotes">Footnotes</a>
+        </div>
+
+        <div id="main-div">
+            <h1>Jupiter: The Gas Giant</h1>
+
+            <div id="intro">
+                <h3>Overview</h3>
+                <p><strong>Jupiter</strong> is the fifth planet from the Sun and is the largest planet our solar system.
+                    Jupiter's stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium.
+                </p>
+            </div>
+            <div id="description">
+                <h3>Description</h3>
+                <p>Jupiter is formed around 4.5 billion years ago with a radius of 43,440.7 miles (69,911 kilometers).
+                    From an average distance of 484 million miles (778 million kilometers), Jupiter is 5.2 astronomical 
+                    units away from the Sun<a href="#footnotes">*</a>. 
+                    It takes about 43 minutes for light from the Sun to reach Jupiter. <br>
+                </p>
+                <iframe src='https://solarsystem.nasa.gov/gltf_embed/2375' width='60%' height='450px' frameborder='0'></iframe>
+                <div>
+                    <p>
+                        A 3D model of Jupiter, a gas giant planet. 
+                        <br>Credit: NASA Visualization Technology Applications and Development (VTAD)<br>
+                    </p>
+                </div>
+                <p>
+                    <strong>Potential for Life:</strong> <br>
+                    Jupiter's environment is probably too extreme and volatile for living orgaisms to adapt to. 
+                    But some of Jupiter's many moons might provide a habitable environment for life. One of the moons is Europa - there is evidence that 
+                    there is an ocean beneath the icy crust, where life could possibly be supported.<br><br>
+                    <strong>Orbit and Rotation:</strong> <br>
+                    Jupiter has the shortest day in the solar system. A day on Jupiter takes only about 10 hours, and completes 
+                    an orbit around the Sun in about 12 Earth years. Jupiter's axis of rotation is tilted by just 3 degrees and doesn't experience seasons 
+                    as extreme as other plantes do. <br><br>
+                    <strong>Structure:</strong> <br>
+                    Jupiter is composed of mostly hydrogen and helium - similar to that of the Sun. Jupiter has a core that is either made 
+                    of solid material or a thick, super-hot and dense soup. The core is 
+                    mostly made of iron and silicate minerals (similar to quartz).<br><br>
+                    <strong>Temperatures:</strong> <br>
+                    The temperature on Jupiter's clouds is about minus 145 degrees Celsius (minus 234 degrees Fahrenheit). 
+                    And the core's temperature may be about 24,000 degrees Celsius (43,000 degrees Fahrenheit) - hotter than the surface of the Sun!<br><br>
+                    <strong>Surface:</strong> <br>
+                    As a gas giant, Jupiter doesn't have a true surface. The planet is mostly made of swirling gases or liquids. <br><br>
+                    <strong>Atmosphere:</strong> <br>
+                    Jupiter likely has three distinct cloud layers in its "skies" made of ammonia ice, ammonium hydrosulfide crystals 
+                    and water ice with vapour respectively. With no solid surface to slow them down, Jupiter's spots 
+                    can presists for many years. One of them, the Great Red Spot has been observed on the giant planet for more than 300 years.<br><br>
+                    <strong>Magetosphere:</strong> <br>
+                    Jupiter's magnetic field is shaped as a teardrop. It balloons 600,000 to 2 million miles (1 to 3 million kilometers) 
+                    toward the Sun (seven to 21 times the diameter of Jupiter itself) and tapers into a tadpole-shaped tail extending more than 600 million miles 
+                    (1 billion kilometers) behind Jupiter. The magetic field is 16 to 54 times more powerful compared to that of Earth's. Jupiter's magnetosphere 
+                    also causes some of the solar system's most spectacular aurorae at the planet's poles.<br><br>
+                    <strong>Moons:</strong> <br>
+                    Jupiter has four large moons and many smaller ones. With 53 confirmed moons and 26 more awaiting confirmation. Jupiter's four 
+                    largest moons – Io, Europa, Ganymede, and Callisto – were first observed by the astronomer Galileo Galilei in 1610.
+                </p>
+            </div>
+            <div id="fun-facts">
+                <h3>Fun Facts!</h3>
+                <ul>
+                    <li>All the planets (excluding Jupiter) could fit inside of Jupiter, twice!</li>
+                    <li>Jupiter has the same ingredients as a star, but it did not grow massive enough to ignite.   </li>
+                    <li>Jupiter has a faint ring system.</li>
+                    <li>Jupiter is named after the Roman king of gods, Jupiter.</li>
+                </ul>
+            </div>
+
+            <div id="simulation">
+                <div id="gravity">
+                    <h3>Simulations</h2>
+
+                    <p>The gravity on Jupiter is 24.8 m/s, click the Run Simulation button to see a 
+                        simulation of an object falling on Jupiter!</p>
+                    <div id="gravity-sim">
+                        <canvas id="canvas-gravity"></canvas>
+                        <br>
+                        <div id="gravity-button">
+                            <a onclick=gravitySimulation(24.8)>Run Simulation!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footnotes">
+                <h3>Footnotes:</h3>
+                    <p><a href="#intro">*</a>One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth.
+                    </p>
+            </div>
+        </div>
+
+
+        <script src="code.js"></script>
+    </body>
+</html>
