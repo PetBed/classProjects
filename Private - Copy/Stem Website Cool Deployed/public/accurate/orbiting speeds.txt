@@ -1,0 +1,69 @@
+Mercury	88 days
+Venus	224.7 days
+Earth	365 days
+Mars	687 days
+Jupiter	4343.5 days
+Saturn	10767.5 days
+Uranus	30660 days
+Neptune	60152 days
+Pluto	90410.5 days
+
+Mercury	4879.4	 38% the size of Earth 
+Venus	12104	 95% the size of Earth
+Earth	12756	 100% the size of Earth
+Mars	6779	 53% the size of Earth
+Jupiter	142800	 1120% the size of Earth
+Saturn	120660	 945% the size of Earth
+Uranus	51118	 400% the size of Earth
+Neptune	49528	 388% the size of Earth
+
+22
+56.175
+91.25           
+171.75
+1085.875
+2691.875
+7665
+15038
+22602.625
+
+https://www.sitepoint.com/community/t/determine-if-mouse-is-over-an-element/4239/3
+
+{planet: mercury}, 
+    {planet: venus}, 
+    {planet: earth}, 
+    {planet: mars}, 
+    {planet: jupiter}, 
+    {splanet: aturn}, 
+    {planet: neptune}, 
+    {planet: pluto}
+
+    var simGoing = 0;
+function gravitySimulation(grav) {
+    if (simGoing == 0) {
+        simGoing = 1
+        var x = 30;
+        var y = 30;
+        var gravity = grav/100;
+        var vol = 0;
+        const update = setInterval(updateGravity, 30);
+        
+        function updateGravity() {
+            gtx.fillStyle = "white"
+            gtx.fillRect(0, 0, g.width, g.height)
+            gtx.fillStyle = "red"
+            gtx.fillRect(x, y, 30, 20);
+
+            vol += gravity;
+            y += vol;
+            if (y > g.height - 10) {
+                clearInterval(update)
+                gtx.fillStyle = "white"
+                gtx.fillRect(0, 0, g.width, g.height)
+                gtx.fillStyle = "red"
+                gtx.fillRect(x, g.height-20, 30, 20);
+                simGoing = 0;
+            }
+        }
+    }
+}
