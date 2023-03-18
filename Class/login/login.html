@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="main-container" id="login" style="display: block;">
+            
+            <div class="container">
+
+                <div class="form">
+                    
+                    <h1>USER LOGIN</h1>
+                    <div class="input">
+                        <input type="text" id="username" placeholder="Username">
+                        <!-- <label for="username">Username</label> -->
+                    </div>
+                    
+                    <div class="input">
+                        <input type="text" id="password" placeholder="Password">
+                        <!-- <label for="password">Password</label> -->
+                    </div>
+                    
+                    <p id="result" style="display: none;"></p>
+                    <a class="login-btn" onclick=login()>LOGIN</a>
+                    <a class="password-btn" onclick="changePage()">Create account</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container" id="signup" style="display: none;">
+            
+            <div class="container">
+
+                <div class="form">
+                    
+                    <h1>USER SIGNUP</h1>
+                    <div class="input">
+                        <input type="text" id="usernameSignup" placeholder="Username">
+                        <!-- <label for="username">Username</label> -->
+                    </div>
+                    
+                    <div class="input">
+                        <input type="text" id="passwordSignup" placeholder="Password">
+                        <!-- <label for="password">Password</label> -->
+                    </div>
+                    
+                    <p id="resultSignup" style="display: none;"></p>
+                    <a class="login-btn" onclick="createAccount()">SIGNUP</a>
+                    <a class="password-btn" onclick="changePage()">Log In</a>
+
+                </div>
+            </div>
+        </div>
+
+            <script>
+                const usernames = [123];
+                const passwords = [456];
+                var usernameInput = document.getElementById("username");
+                var passwordInput = document.getElementById("password");
+                var usernameSignupInput = document.getElementById("usernameSignup");
+                var passwordSignupInput = document.getElementById("passwordSignup");
+                var mainContainer = document.getElementById("main-container");
+                var loginResult = document.getElementById("result");
+                var loginPage = document.getElementById("login")
+                var signupPage = document.getElementById("signup");
+                var signupResult = document.getElementById("resultSignup");
+
+                function login() {
+                    for(i=0;i<=usernames.length;i++) {
+                        if(usernameInput.value == usernames[i] && passwordInput.value == passwords[i]) {
+                            console.log("Login")
+                            showHideElement(true, loginResult, 0);
+                            loginResult.innerHTML = "Login Succesful!"
+                            showHideElement(false, loginResult, 3000);
+                            location.replace("./table.html")
+                            return;
+                        }
+                    }
+                    console.log("Deny")
+                    showHideElement(true, loginResult, 0);
+                    loginResult.innerHTML = "Invalid Account Credentials"
+                    showHideElement(false, loginResult, 3000)
+                }
+
+                function showHideElement(boolean, id, time) {
+                    setTimeout(function() {
+                        if(boolean) {
+                            id.style.display = "block"
+                        } else {
+                            id.style.display = "none"
+                        }
+                    }, time);
+                }
+
+                function changePage() {
+                    if(loginPage.style.display == "block") {
+                        showHideElement(false, loginPage, 0);
+                        showHideElement(true, signupPage, 0);
+                    } else {
+                        showHideElement(true, loginPage, 0);
+                        showHideElement(false, signupPage, 0);
+                    }
+                }
+
+                function createAccount() {
+                    showHideElement(true, signupResult, 0);
+                    signupResult.innerHTML = "Signup Succesful!"
+                    showHideElement(false, signupResult, 3000);
+                    usernames.push(usernameSignupInput.value);
+                    passwords.push(passwordSignupInput.value);
+                    usernameSignupInput.value = "";
+                    passwordSignupInput.value = "";
+                }
+                
+            </script>
+    </body>
+</html>

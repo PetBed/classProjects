@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weight Conversion</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="title-container">
+                <h1 id="title">Weight Conversion</h1>
+            </div>
+        <div id="container">
+            <select id="type-convert">
+                <option>Weight</option>
+                <option>Length</option>
+                <option>Fluid Volume</option>
+            </select>
+
+            <div id="converts">
+                <div id="left" class="center">
+                    <select id="left-convert">
+                    </select>
+                    <input id="left-input" type="number">
+                </div>
+                
+                <div id="right" class="center">
+                    <select id="right-convert">
+                    </select>
+                    <input id="right-input" type="number">
+                </div>
+            </div>
+            
+            </div>
+            <div id="formula">
+                <p id="formula-text"></p>
+            </div>
+        </div>
+        <script src="code.js"></script>
+    </body>
+</html>

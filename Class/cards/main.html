@@ -1,0 +1,210 @@
+<!--
+  Add tooltip, transitions, and gradients
+  to make a user profile card.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Profile Card</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        background: #ccc;
+      }
+      h1 {
+        margin: 0;
+        font-size: 20px;
+      }
+      header {
+        padding: 10px 7px;
+        background: #000000;
+        color: #ffffff;
+      }
+
+      #main-container {
+        position: relative;
+      }
+
+      #cardOne {
+        max-width: 100%;
+        width: 400px;
+        border: 4px solid;
+        top: 50%;
+        margin-top: 170px;
+        right: 50%;
+        margin-right: -200px;
+        background: #FEE757;
+        z-index: -1;
+        position: absolute;
+        display: block;
+        transition: all ease-in-out 1s;
+      }
+      
+      #cardTwo {
+        max-width: 100%;
+        width: 400px;
+        border: 4px solid;
+        margin: 10px auto 0;
+        top: 50%;
+        margin-top: 170px;
+        right: 50%;
+        margin-right: -200px;
+        background: rgb(0, 157, 255);
+        z-index: -2;
+        position: absolute;
+        display: block;
+      }
+      
+      #cardOne:hover{
+        opacity: 0;
+      }
+
+      /* .cardOne:hover{
+        display: none;
+        transition-duration: 3000ms;
+      } */
+
+
+      #cardOne .avatar {
+        background: linear-gradient(orange, #FEE757);
+      }
+
+      #cardTwo .avatar {
+        background: linear-gradient(blue, rgb(0, 157, 255));
+      }
+
+      /* #cardOne .avatar:hover {
+        background: linear-gradient(blue, rgb(0, 157, 255));
+        transition-duration: 1s;
+      } */
+      .avatar img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+      }
+         
+      .tooltip-container {
+        position: relative;
+      }
+      .tooltip {
+        
+      }
+      a {
+        color: blue;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      .details {
+        text-align: left;
+      }
+      .details tr th {
+        padding: 2px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="cardOne">      
+        <header>
+          <h1 class="tooltip-container">
+            Card 1
+          </h1>
+        </header>
+        
+        <div class="avatar">
+          <img src="https://picsum.photos/300/200">
+        </div>
+  
+        <section class="details">
+          <table>
+            <tr>
+              <th>Favorite Song:</th>
+              <th>My song</th>
+            </tr>
+            <tr>
+              <th>Favorite Video:</th>
+              <th>My video</th>
+            </tr>
+            <tr>
+              <th>Favourite Meme:</th>
+              <th>My meme</th>
+            </tr>
+            <tr>
+              <th>Social Link:</th>
+              <th><a>Test</a></th>
+            </tr>
+          </table>
+        </section>
+      </div>
+  
+        
+
+      <div id="cardTwo">      
+        <header>
+          <h1 class="tooltip-container">
+            Card 2
+          </h1>
+        </header>
+        
+        <div class="avatar">
+          <img src="https://picsum.photos/301/200">
+        </div>
+
+        <section class="details">
+          <table>
+            <tr>
+              <th>Favorite Song:</th>
+              <th>My song</th>
+            </tr>
+            <tr>
+              <th>Favorite Video:</th>
+              <th>My video</th>
+            </tr>
+            <tr>
+              <th>Favourite Meme:</th>
+              <th>My meme</th>
+            </tr>
+            <tr>
+              <th>Social Link:</th>
+              <th><a>Test</a></th>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </div>
+
+    <!-- <script>
+      var cardOne = document.getElementById("cardOne");
+      var cardTwo = document.getElementById("cardTwo");
+      var card = 1
+      function cardOneHover() {
+        cardOne.style.display = "none";
+        cardTwo.style.display = "block";
+        card = 2;
+      }
+
+      function cardTwoHover() {
+        cardOne.style.display = "block";
+        cardTwo.style.display = "none";
+        card = 1;
+      }
+
+      function changeCard() {
+        if (card == 1) {
+          cardOneHover();
+        } else {
+          cardTwoHover();
+        }
+        console.log(card)
+      }
+
+      addEventListener('keydown', (event) => {
+        changeCard();
+      })
+    </script> -->
+  </body>
+</html>

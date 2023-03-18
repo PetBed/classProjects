@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geometry Dash</title>
+  </head>
+  <body>
+      <p id="number"></p>
+
+    <canvas id="canvas" width="800" height="500"></canvas>
+    <script>    
+        const numbers = [];
+        var curNum = 12;
+        var exNum;
+        var lastNum = 12;
+        function update() {
+            runSimulation();
+            curNum = 12;
+        }
+        function runSimulation() {
+                    exCalculate();
+                    function exCalculate() {
+                        if(Math.round((Math.random() * 1) + 0) == 1) {
+                            exNum = 3
+                        } else {
+                            exNum = 2
+                        };
+                    
+                        if(Math.round((Math.random() * 1) + 0) == 1) {
+                            lastNum = curNum;
+                            curNum = curNum * exNum;
+                        } else {
+                            lastNum = curNum;
+                            curNum = curNum / exNum;
+                            if (curNum % 1 != 0) {
+                                curNum = lastNum;
+                                exCalculate();
+                            }
+                        };
+                    
+                    if(curNum == 36 || curNum == 108 || curNum == 72 || curNum == 24 || curNum == 18) {
+                        numbers.push(curNum);
+                        document.getElementById("number").innerHTML = numbers.join(",  ");
+                    }
+                    console.log(curNum)
+                }
+        }
+        setInterval(update,10);
+    </script>
+
+  </body>
+</html> 

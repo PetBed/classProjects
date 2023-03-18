@@ -1,0 +1,22 @@
+ul {
+    list-style: none;
+    padding: 0px;
+}
+a {
+    padding: 5px 5px;
+    font-size: 30px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: black;
+    background-color: rgb(245, 245, 245);
+    width: 100vw;
+    display: inline-block;
+}
+li {
+    left: 0px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}

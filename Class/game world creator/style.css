@@ -1,0 +1,43 @@
+#grid {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.tile {
+    border: 1px black solid;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+td {
+    border: 1px black solid;
+    width: 32px;
+    height: 32px;
+    padding: 0px;
+}
+.row {
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+    /* font-size: 100px; */
+    /* display: grid; */
+}
+img {
+    height: 32px;
+    width: 32px;
+    z-index: 0;
+    position: relative;
+    display: block;
+}
+.treeTile {
+    height: 64px;
+    top: -32px;
+    z-index: 100;
+}
+.cobblestoneTile {
+    z-index: -1;
+}
+.grassTile {
+    z-index: -1;
+}

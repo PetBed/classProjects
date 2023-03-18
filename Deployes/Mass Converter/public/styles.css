@@ -1,0 +1,72 @@
+body {
+    background-color: #1abc9c;
+    font-family: "Source Sans Pro", sans-serif;
+}
+#main-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 500px;
+    height: 375px;
+    z-index: 1;
+}
+h1 {
+    color: black;
+    margin-bottom: 25px;
+    font-size: 46px;
+}
+.center {
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#title-container{
+    text-align: center;
+}
+#formula{
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+}
+#formula-text span {
+    background-color: #1abc9c;
+    padding: 4px;
+    border-radius: 3px;
+    color: white;
+}
+#converts{
+    display: flex;
+    margin-bottom: 21px;
+}
+#converts div input {
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #8c8c8c;
+    border-radius: 3px;
+    padding: 4px;
+}
+#converts div select {
+    border: none;
+    background-color: #dfdfdf;
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 0.8rem;
+    color: #343434;
+}
+#type-convert {
+    border: none;
+    margin-bottom: 19px;
+    background-color: #dfdfdf;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 16px;
+}

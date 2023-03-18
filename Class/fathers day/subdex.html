@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Father's Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+      <style>
+        html {
+            background-image: url("images/wooden background.jpg");
+        }
+        body {
+        height: 0;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        }
+        #background {
+            position: absolute;
+            z-index: -1;
+            margin-left: 0;
+            margin-top: 0;
+            padding: 0;
+        }
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            margin-top: 0;
+            text-align: center;
+            font-size: 100px;
+            color: blue;
+            margin-bottom: 0;
+        }
+        h2 {
+            text-align: center;
+            color: rgb(0, 140, 255);
+        }
+        .left {
+            text-align: left;
+        }
+        .text {
+            font-size: 25px;
+            font-weight: 200;
+            color: black;
+            font-family: sans-serif;
+            background-color: burlywood;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <p id="lol"></p>
+    <script>
+        var clicks = 0;
+        
+        
+        document.addEventListener("click", function click() {
+            clicks++;
+        })
+
+        setInterval(function change() {
+            document.getElementById("lol").innerHTML = clicks;
+        }, 10);
+    </script>
+  </body>
+</html>

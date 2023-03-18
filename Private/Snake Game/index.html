@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boid Simulation</title>
+    <style>
+      body { margin: 0; }
+      canvas { width: 100%; height: 100%; }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+    <script>
+      // Set up the Three.js scene and camera
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+      // Create a group to hold the boids
+      const boidGroup = new THREE.Group();
+
+      // Create a boid object with position, velocity, and acceleration properties
+      class Boid extends THREE.Object3D {
+  constructor() {
+    super();
+    this.position = new THREE.Vector3();
+    this.velocity = new THREE.Vector3();
+    this.acceleration = new THREE.Vector3();
+  }
+}
+
+
+      // Create an array to hold the boids
+      const boids = [];
+
+      // Create a specified number of boids and add them to the boid group
+      for (let i = 0; i < 50; i++) {
+        const boid = new Boid();
+        boid.position.x = Math.random() * 100 - 50;
+        boid.position.y = Math.random() * 100 - 50;
+        boid.position.z = Math.random() * 100 - 50;
+        boidGroup.add(boid);
+        boids.push(boid);
+      }
+
+      // Add the boid group to the scene
+      scene.add(boidGroup);
+
+      // Set up the renderer
+      const renderer = new THREE.WebGLRenderer();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      // Set up the boid simulation
+      function simulateBoids() {
+        // Update the boid positions based on their velocities and accelerations
+        for (let i = 0; i < boids.length; i++) {
+          const boid = boids[i];
+          boid.velocity.add(boid.acceleration);
+          boid.position.add(boid.velocity);
+        }
+
+        // Update the positions of the objects in the boid group to match the boid positions
+        boidGroup.children.forEach((object, index) => {
+          object.position.copy(boids[index].position);
+        });
+      }
+
+      // Render the scene
+      function render() {
+        requestAnimationFrame(render);
+        simulateBoids();
+        renderer.render(scene, camera);
+      }
+
+      render();
+    </script>
+  </body>
+</html>

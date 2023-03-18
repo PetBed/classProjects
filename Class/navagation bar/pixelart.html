@@ -1,0 +1,990 @@
+<!-- 
+    Create your own Space Invaders-style 
+    pixel art character gallery.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Pixel Art</title>
+    <!-- Define a grid to hold 5x5 squares and a smaller square block. Do the math so that the dimensions of the grid hold the square -->
+    <style>
+      body {
+        margin: 10px;
+      }
+      .grid {
+        width: 520px;
+      }
+      .square {
+        width: 20px;
+        height: 20px;
+        border: 0px solid black;
+        float: left;
+      }
+      .grid {
+        
+      }
+      .b {
+        background-color: #271F1B;
+      }
+      .br {
+        background-color: #B05B2C;
+      }
+      .o {
+        background-color: #E88A36;
+      }
+      .op {
+        background-color: #FCA570;
+      }
+      .ly {
+        background-color: #F6D896;
+      }
+      .w {
+        background-color: #ECEBE7;
+      }
+      .lg {
+        background-color: #CBC6C1;
+      }
+      .g {
+        background-color: #A69E9A;
+      }
+      .lb {
+        background-color: #323232;
+      }
+      .db {
+        background-color: #050403;
+      }
+      .tw {
+        background-color: #FFFFFF;
+      }
+      .pu {
+        background-color: #494182;
+      }
+      .bl {
+        background-color: #4572E3;
+      }
+      .lbl {
+        background-color: #8AA1F6;
+      }
+      .p {
+        background-color: #FFE9E3;
+      }
+      .dp {
+        background-color: #EEB59C;
+      }
+      .bp {
+        background-color: #B28B78;
+      }
+      .lbp {
+        background-color: #E2B27E;
+      }
+      .lbr {
+        background-color: #C68556;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- The grid div holds many square divs. Complete your artwork by adding the right number of squares in each grid and using the right colors -->
+    <div class="grid">
+      <!-- Row 1 -->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+
+      <!-- Row 2-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square br"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square br"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 3-->
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square o"></div>
+      <div class="square br"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square g"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square br"></div>
+      <div class="square o"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 4-->
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square o"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square g"></div>
+      <div class="square g"></div>
+      <div class="square g"></div>
+      <div class="square g"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square o"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 5-->
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square o"></div>
+      <div class="square b"></div>
+      <div class="square g"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square g"></div>
+      <div class="square g"></div>
+      <div class="square g"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square o"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 6-->
+      <div class="square b"></div>
+      <div class="square g"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square op"></div>
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square b"></div>
+      <div class="square g"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square b"></div>
+      <div class="square op"></div>
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 7-->
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square g"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square op"></div>
+      <div class="square ly"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square op"></div>
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square ly"></div>
+      <div class="square op"></div>
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 8-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square o"></div>
+      <div class="square ly"></div>
+      <div class="square ly"></div>
+      <div class="square b"></div>
+      <div class="square op"></div>
+      <div class="square ly"></div>
+      <div class="square op"></div>
+      <div class="square b"></div>
+      <div class="square ly"></div>
+      <div class="square ly"></div>
+      <div class="square o"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 9-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square o"></div>
+      <div class="square br"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square ly"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square br"></div>
+      <div class="square o"></div>
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      
+      <!-- Row 10-->
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square b"></div>
+      <div class="square ly"></div>
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      
+      <!-- Row 11-->
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      
+      <!-- Row 12-->
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square lb"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square lg"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 13-->
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lb"></div>
+      <div class="square lb"></div>
+      <div class="square lb"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square lg"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 14-->
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square lb"></div>
+      <div class="square lb"></div>
+      <div class="square lg"></div>
+      <div class="square lb"></div>
+      <div class="square lb"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 15-->
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square lb"></div>
+      <div class="square lb"></div>
+      <div class="square lb"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 16-->
+      <div class="square b"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square lb"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square g"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square lb"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 17-->
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square lb"></div>
+      <div class="square db"></div>
+      <div class="square lb"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lb"></div>
+      <div class="square db"></div>
+      <div class="square g"></div>
+      <div class="square lb"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 18-->
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square g"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square lb"></div>
+      <div class="square tw"></div>
+      <div class="square db"></div>
+      <div class="square db"></div>
+      <div class="square lb"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lb"></div>
+      <div class="square db"></div>
+      <div class="square g"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 19-->
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square g"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square lb"></div>
+      <div class="square tw"></div>
+      <div class="square bl"></div>
+      <div class="square lbl"></div>
+      <div class="square dp"></div>
+      <div class="square lb"></div>
+      <div class="square lb"></div>
+      <div class="square lb"></div>
+      <div class="square lb"></div>
+      <div class="square bl"></div>
+      <div class="square tw"></div>
+      <div class="square lb"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square lg"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 20-->
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square g"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lb"></div>
+      <div class="square dp"></div>
+      <div class="square pu"></div>
+      <div class="square bl"></div>
+      <div class="square p"></div>
+      <div class="square p"></div>
+      <div class="square p"></div>
+      <div class="square p"></div>
+      <div class="square bl"></div>
+      <div class="square pu"></div>
+      <div class="square dp"></div>
+      <div class="square lb"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square g"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 21-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square g"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square dp"></div>
+      <div class="square dp"></div>
+      <div class="square p"></div>
+      <div class="square p"></div>
+      <div class="square p"></div>
+      <div class="square p"></div>
+      <div class="square p"></div>
+      <div class="square p"></div>
+      <div class="square dp"></div>
+      <div class="square lb"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 22-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square g"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square bp"></div>
+      <div class="square dp"></div>
+      <div class="square dp"></div>
+      <div class="square dp"></div>
+      <div class="square dp"></div>
+      <div class="square bp"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 23-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 24-->
+      <div class="square "></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square pu"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square pu"></div>
+      <div class="square pu"></div>
+      <div class="square pu"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 25-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square pu"></div>
+      <div class="square pu"></div>
+      <div class="square b"></div>
+      <div class="square tw"></div>
+      <div class="square pu"></div>
+      <div class="square lbp"></div>
+      <div class="square lbp"></div>
+      <div class="square pu"></div>
+      <div class="square lbp"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square pu"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 26-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square pu"></div>
+      <div class="square pu"></div>
+      <div class="square b"></div>
+      <div class="square lbr"></div>
+      <div class="square lg"></div>
+      <div class="square g"></div>
+      <div class="square lbp"></div>
+      <div class="square w"></div>
+      <div class="square lbp"></div>
+      <div class="square w"></div>
+      <div class="square lbp"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square lbr"></div>
+      <div class="square b"></div>
+      <div class="square pu"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 27-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square p"></div>
+      <div class="square lbr"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square lbp"></div>
+      <div class="square lbp"></div>
+      <div class="square lbp"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square b"></div>
+      <div class="square lbr"></div>
+      <div class="square p"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 28-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square "></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square w"></div>
+      <div class="square g"></div>
+      <div class="square b"></div>
+      <div class="square pu"></div>
+      <div class="square pu"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 29-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square lg"></div>
+      <div class="square w"></div>
+      <div class="square lg"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square pu"></div>
+      <div class="square pu"></div>
+      <div class="square pu"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 30-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square lbp"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square lg"></div>
+      <div class="square b"></div>
+      <div class="square lbp"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 31-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square lbr"></div>
+      <div class="square lbr"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square lbr"></div>
+      <div class="square lbr"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+      <!-- Row 32-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square lbp"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square b"></div>
+      <div class="square lbp"></div>
+      <div class="square b"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      
+    </div>
+    
+ 
+  </body>
+</html>
