@@ -1,0 +1,29 @@
+iframe {
+    width: 100%;
+    display: block;
+}
+h3 {
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: relative;
+}
+.chessGame {
+    /* width: 75%;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: relative; */
+    text-align: center;
+    background-color: azure;
+}
+.flex-container {
+    display: flex;
+
+}
+.flex-child {
+    flex: 1;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
