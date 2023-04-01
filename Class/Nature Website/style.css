@@ -1,35 +1,53 @@
 .image {
     width: help;
-    height: 100%;
-    display: inline;
+    height: 10em;
+    display: inline-block;
+}
+h1 {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    width: 138%;
+    height: 100px;
+}
+li {
+    float: left;
+}
+li:hover .bigImage {
+    display: block;
 }
 .bigImage {
     display: none;
     position: absolute;
-    top: -100%;
-    transform: translate(-50%, -50%)
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    /* transform: translate(-50%, -50%); */
+    height: 500px;
 }
-.bigImg1 {
+/* .bigImg1 {
     display: block;
     width: 400px;
-}
+} */
 .photoDisplay {
-    padding-top: 300px;
-    width: 92%;
+    padding-top: 500px;
+    /* width: 92%;
     /* height: 80%; */
     left: 50%;
     transform: translate(-50%,0%);
     position: relative;
-    border: 2px rgb(193, 193, 193) solid;
+    border: 2px rgb(193, 193, 193) solid; 
+    align-items: center ;
 }
 .photos {
     width: 90vw;
-    height: 80vh;
+    height: fit-content;
     left: 50%;
     transform: translate(-50%,0%);
     position: relative;
     border: 2px rgb(193, 193, 193) solid;
-    padding: 0px 10px;
+    padding: 10px 10px;
 }
 /* .enlargedPhoto {
     width: 90%;
@@ -43,14 +61,16 @@
     margin-bottom: 1%; 
 } */
 .photoList {
-    position: relative;
+    overflow: scroll;
+    width: 100%;
+    height: 200px;
+    display: block;
+    /* position: relative;
     top: 2%;
     border: 2px rgb(193, 193, 193) solid;
     width: 90%;
     height: 20%;
     left: 50%;
     transform: translate(-50%,0%);
-    overflow-x: scroll;
-    white-space: nowrap;
-    overflow-y: visible;
+    white-space: nowrap; */
 }
