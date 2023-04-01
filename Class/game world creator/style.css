@@ -41,3 +41,6 @@ img {
 .grassTile {
     z-index: -1;
 }
+.pinkFlowerTile {
+    z-index: 100;
+}

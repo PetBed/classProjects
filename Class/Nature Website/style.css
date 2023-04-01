@@ -1,0 +1,56 @@
+.image {
+    width: help;
+    height: 100%;
+    display: inline;
+}
+.bigImage {
+    display: none;
+    position: absolute;
+    top: -100%;
+    transform: translate(-50%, -50%)
+}
+.bigImg1 {
+    display: block;
+    width: 400px;
+}
+.photoDisplay {
+    padding-top: 300px;
+    width: 92%;
+    /* height: 80%; */
+    left: 50%;
+    transform: translate(-50%,0%);
+    position: relative;
+    border: 2px rgb(193, 193, 193) solid;
+}
+.photos {
+    width: 90vw;
+    height: 80vh;
+    left: 50%;
+    transform: translate(-50%,0%);
+    position: relative;
+    border: 2px rgb(193, 193, 193) solid;
+    padding: 0px 10px;
+}
+/* .enlargedPhoto {
+    width: 90%;
+    height: 70%;
+    position: relative;
+    display: block;
+    border: 2px rgb(193, 193, 193) solid;
+    left: 50%;
+    transform: translate(-50%,0%);
+    top: 4%;
+    margin-bottom: 1%; 
+} */
+.photoList {
+    position: relative;
+    top: 2%;
+    border: 2px rgb(193, 193, 193) solid;
+    width: 90%;
+    height: 20%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y: visible;
+}

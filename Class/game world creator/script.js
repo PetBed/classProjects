@@ -1,7 +1,7 @@
 var grid = document.getElementById("grid")
 
 var tileIndex = 0;
-var seed = "10/10/10G/5G1TG4G/10G/10C/10C/10C/10C/7G1TG2G/10G/10G/";
+var seed = "10/10/10G/3G1pG1G1TG4G/10G/10G/10G/10G/10G/7G1TG2G/10G/10G/";
 var gridHeight, gridWidth
 var values = [];
 var tileList = [];
@@ -89,14 +89,15 @@ function createGrid() {
                 tileTypeChar = tileType.charAt(k)
 
                     console.log(tileTypeChar)
-                    createTexture("T", "tree.png", "tree", true)
+                    createTexture("T", "tree.png", "tree", true, "-64px")
                     createTexture("C", "cobblestone.jpg", "stone")
                     createTexture("G", "grass.jpg", "grass")
+                    createTexture("p", "pink_flower.png", "pinkFlower", true, "-32px")
             }
 
 
 
-            function createTexture(tileTypeCharName, path, className, multipleTextures) {
+            function createTexture(tileTypeCharName, path, className, multipleTextures, top) {
                 if (tileTypeChar == tileTypeCharName) {
                     
                     var addImg = document.createElement("img")
@@ -110,8 +111,8 @@ function createGrid() {
                     k++
                     
                     if (multipleTextures == true) {
-                        createSubTexture("C", "cobblestone.jpg", "stone", "-64px")
-                        createSubTexture("G", "grass.jpg", "grass", "-64px")
+                        createSubTexture("C", "cobblestone.jpg", "stone", top)
+                        createSubTexture("G", "grass.jpg", "grass", top)
                         console.log("AWEWAE")
 
                         function createSubTexture(tileTypeCharName, path, className, offsetY) {
