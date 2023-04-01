@@ -1,0 +1,35 @@
+.mainContainer {
+    overflow: hidden;
+    height: 90vh;
+    width: 90vw;
+    border: 2px rgb(193, 193, 193) solid; 
+    /* top: -50%;
+    left: -50%;
+    transform: translate(50%, 50%); */
+    margin: auto;
+    position: absolute;
+}
+body {
+}
+.images {
+    height: 90%;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 9000px;
+    animation: carousel 3s infinite;
+    padding-left: 50px;;
+}
+.image {
+    height: 90%;
+    display: inline;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+@keyframes carousel {
+    0% {left: 0}
+    80% {left: -1100px;}
+    90% {left: 0;}
+    100% {left: 0;}
+}
