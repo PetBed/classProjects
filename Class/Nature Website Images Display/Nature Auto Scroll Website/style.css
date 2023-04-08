@@ -9,15 +9,15 @@
     margin: auto;
     position: absolute;
 }
-body {
-}
+/* body {
+} */
 .images {
     height: 90%;
     position: relative;
     top: 50%;
     transform: translate(0%, -50%);
     width: 9000px;
-    animation: carousel 3s infinite;
+    animation: carousel 20s infinite;
     padding-left: 50px;;
 }
 .image {
@@ -29,7 +29,9 @@ body {
 }
 @keyframes carousel {
     0% {left: 0}
-    80% {left: -1100px;}
-    90% {left: 0;}
+    10% {left: 0}
+    75% {left: -1300px;}
+    85% {left: -1300px;}
+    /* 95% {left: 0;} */
     100% {left: 0;}
 }
