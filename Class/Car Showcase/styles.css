@@ -10,6 +10,8 @@
     position: relative;
 }
 /* body {
+    margin: 0;
+    padding: 0;
 } */
 .images {
     height: 90%;
@@ -53,3 +55,47 @@
 input[type="radio"]:checked + label ul{
     display: block;
 }
+.title {
+    width: 100vw;
+    height: 70vh;
+    display: block;
+}
+.title img {
+    width: 100%;
+    height: 100%;
+}
+.carDetailImage {
+    width: 100%;
+    /* top: 50%; */
+    transform: translate(0%, 15%);
+}
+.buyNow {
+    width: 100%;
+    background-color: #EB0A1E;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 2em;
+    text-decoration: none;
+}
+.buyNow:hover {
+    transition: 0.2s ease-in-out;
+    background-color: #C50F1F;
+}
+.specs {
+    text-decoration: none;
+    width: 100%;
+    border: 1px solid black;
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 2em;
+    margin: 15px 0;
+}
+/* button[type="submit"] + ul{
+    display: block;
+} */
