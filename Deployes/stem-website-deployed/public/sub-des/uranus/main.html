@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uranus</title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="nav-bar">
+            <a href="../../" id="back-button">&laquo; Back</a>
+            <a href="#intro">Overview</a>
+            <a href="#description">Description</a>
+            <a href="#fun-facts">Fun Facts</a>
+            <a href="#simulation">Simulation(s)</a>
+            <a href="#footnotes">Footnotes</a>
+        </div>
+
+        <div id="main-div">
+            <h1>Uranus: The Bulls-Eye Planet</h1>
+
+            <div id="intro">
+                <h3>Overview</h3>
+                <p><strong>Uranus</strong> is the seventh planet from the Sun and has the third largest diameter our solar system.
+                    Uranus is very cold and windy and rotates at a nearly 90 degree angle from its plane of orbit.
+                </p>
+            </div>
+            <div id="description">
+                <h3>Description</h3>
+                <p>Uranus is formed around 4.5 billion years ago with a radius of 15,759.2 miles (25,362 kilometers).
+                    From an average distance of 1.8 billion miles (2.9 billion kilometers), Uranus is 19.8 astronomical units 
+                    away from the Sun<a href="#footnotes">*</a>. 
+                    It takes about 2 hours and 40 minutes for light from the Sun to reach Saturn. <br>
+                </p>
+                <iframe src='https://solarsystem.nasa.gov/gltf_embed/2344' width='60%' height='450px' frameborder='0'></iframe>                <div>
+                    <p>
+                        A 3D model of Uranus.
+                        <br>Credit: NASA Visualization Technology Applications and Development (VTAD)<br>
+                    </p>
+                </div>
+                <p>
+                    <strong>Potential for Life:</strong> <br>
+                    Uranus's environment is not too conducive to life as we know it. The temperatures, pressures and materials are most likey too 
+                    extreme and volatile for living organisms to adapt to.
+                    <br><br>
+                    <strong>Orbit and Rotation:</strong>  <br>
+                    A day on Uranus takes about 17 hours, and completes an orbit around the Sun in about 84 Earth years. Uranus is the only planet 
+                    whos nearly orbiting at a right angle - with a axis of rotation of 97.77 degrees. The tilt is probably caused from a collision 
+                    with a Earth like planet. This tilt causes the most extreme seasons in the solar system.
+                    This means that, like Earth, Saturn experiences seasons.<br><br>
+                    <strong>Structure:</strong>  <br>
+                    Uranus is one of the two ice giants in the outer solar system. 80% or more of its mass is made up from hot dense fluid 
+                    of "icy" materials - water, methane and ammonia. Near the core, it heats up to 4,982 degrees Celsius (9,000 degrees Fahrenheit).<br><br>
+                    <strong>Temperatures:</strong>  <br>
+                    The temperature on Uranus is around minus 214 degrees Celsius (minus 353 degrees Fahrenheit), with the coldest temperature found so far 
+                    of minus 224 degrees Celsius (minus 371 degrees Fahrenheit).<br><br>
+                    <strong>Surface:</strong> <br>
+                    As a gas giant, Saturn doesn’t have a true surface. The planet is mostly swirling gases and liquids deeper down. <br><br>
+                    <strong>Atmosphere:</strong> <br>
+                    Uranus' atmosphere is mostly made of hydrogen and helium, with a small ammount of methane, water and ammonia. It is the methane 
+                    that gives Uranus its signature blue colour. Uranus' atmosphere, with a minimum temperature of 49K (-224.2 degrees Celsius) 
+                    makes it even colder than Neptune in some places. The wind speeds up to 560 miles per hour (900 kilometers per hour) on Uranus.<br><br>
+                    <strong>Magetosphere:</strong> <br>
+                    Uranus has an unusual, irregularly shaped magnetosphere - Uranus' magnetic field is tipped over by nearly 60 degrees from the planet's axis 
+                    of rotation, and is also offset from the center by about one third of the planet's radius. The magnetosphere tail behind Uranus opposite 
+                    the Sun extends into space for millions of miles. <br><br>
+                    <strong>Moons: </strong> <br>
+                    Uranus has 27 known moons. All of Uranus' inner moons appear to be roughly half water ice and half rock. The composition of the outer moons 
+                    remains unknown, but they are likely captured asteroids. <br><br>
+                    <strong>Rings: </strong> <br>
+                    Uranus has two sets of rings, the inner system has nine rings and the outer system has four <a href="#footnotes">**</a>.
+                </p>
+            </div>
+            <div id="fun-facts">
+                <h3>Fun Facts!</h3>
+                <ul>
+                    <li>Uranus has thirteen rings.</li>
+                    <li>The auroras on Uranus are not in line with its poles, due to the lopsided magnetic field.</li>
+                    <li>Uranus also rotates clockwise, like Venus.</li>
+                    <li>Uranus is named after the primordial Roman of the sky, Uranus.</li>
+                </ul>
+            </div>
+
+            <div id="simulation">
+                <div id="gravity">
+                    <h3>Simulations</h2>
+
+                    <p>The gravity on Saturn is 8.87m/s, click the Run Simulation button to see a 
+                        simulation of an object falling on Saturn!</p>
+                    <div id="gravity-sim">
+                        <canvas id="canvas-gravity"></canvas>
+                        <br>
+                        <div id="gravity-button">
+                            <a onclick=gravitySimulation(8.87)>Run Simulation!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footnotes">
+                <h3>Footnotes:</h3>
+                    <p><a href="#intro">*</a>One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth.
+                    </p>
+                    <p><a href="#description">**</a>The rings are named in the order of increasing distance from the planet - 
+                        Zeta, 6, 5, 4, Alpha, Beta, Eta, Gamma, Delta, Lambda, Epsilon, Nu, and Mu.</p>
+            </div>
+        </div>
+
+
+        <script src="code.js"></script>
+    </body>
+</html>

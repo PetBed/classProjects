@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saturn</title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="nav-bar">
+            <a href="../../" id="back-button">&laquo; Back</a>
+            <a href="#intro">Overview</a>
+            <a href="#description">Description</a>
+            <a href="#fun-facts">Fun Facts</a>
+            <a href="#simulation">Simulation(s)</a>
+            <a href="#footnotes">Footnotes</a>
+        </div>
+
+        <div id="main-div">
+            <h1>Saturn: The Ringed Planet</h1>
+
+            <div id="intro">
+                <h3>Overview</h3>
+                <p><strong>Saturn</strong> is the sixth planet from the Sun and is the second largest planet our solar system.
+                    Saturn is known for its dazzling, complex system of icy rings that are second to none in the solar system. 
+                    Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium.
+                </p>
+            </div>
+            <div id="description">
+                <h3>Description</h3>
+                <p>Saturn is formed around 4.5 billion years ago with a radius of 36,183.7 miles (58,232 kilometers).
+                    From an average distance of 886 million miles (1.4 billion kilometers), Saturn is 9.5 astronomical units 
+                    away from the Sun.<a href="#footnotes">*</a>. 
+                    It takes about 80 minutes for light from the Sun to reach Saturn. <br>
+                </p>
+                <iframe src='https://solarsystem.nasa.gov/gltf_embed/2355' width='60%' height='450px' frameborder='0'></iframe>
+                <div>
+                    <p>
+                        A 3D model of Saturn, the ringed gas giant planet. 
+                        <br>Credit: NASA Visualization Technology Applications and Development (VTAD)<br>
+                    </p>
+                </div>
+                <p>
+                    <strong>Potential for Life:</strong> <br>
+                    Saturn's environment is probably too extreme and volatile for living orgaisms to adapt to. 
+                    But some of Saturn's moons might be able provide a habitable environment for life. Moons like Enceladus and Titan, 
+                    home to internal oceans, could possibly support life.<br><br>
+                    <strong>Orbit and Rotation:</strong>  <br>
+                    Saturn has the second shortest day in the solar system. A day on Saturn takes only 10.7 hours, and completes 
+                    An orbit around the Sun in about 29.4 Earth years. Saturn's axis of rotation is tilted by 26.73 degrees, which is similar to Earth's. 
+                    This means that, like Earth, Saturn experiences seasons.<br><br>
+                    <strong>Structure:</strong>  <br>
+                    Like Jupiter, Saturn is mostly made of hydrogen and helium. Its core consists of metals like iron and nickel surrounded by rocky material. 
+                    It is hard to imagine but Saturn is the only planet in our solar system with an average density lower than water. <br><br>
+                    <strong>Temperatures:</strong>  <br>
+                    The temperature on Saturn is around minus 140 degrees Celsius (minus 220 degrees Fahrenheit), a lot more colder than Jupiter, since its further 
+                    from the Sun.<br><br>
+                    <strong>Surface:</strong> <br>
+                    As a gas giant, Saturn doesn’t have a true surface. The planet is mostly swirling gases and liquids deeper down. <br><br>
+                    <strong>Atmosphere:</strong> <br>
+                    Saturn is blanketed with clouds that appear as faint stripes. The planet is many different shades of yellow, brown, and gray. 
+                    Winds in the upper atmosphere reach 500 meters per second. In contrast, the fastest wind speed ever recorded on Earth is just 
+                    around 113 meters per second.<br><br>
+                    <strong>Magetosphere:</strong> <br>
+                    Saturn's magnetic field is smaller than Jupiter's but still 578 times as powerful as Earth's. Like Jupiter, Saturn's aurorae are not created 
+                    from the solar winds, but rather from Saturn's moons and Saturn's magnetic field's rapid rotation rate. <br><br>
+                    <strong>Moons: </strong> <br>
+                    Saturn is home to a vast array of moons. From haze-shrouded Titan to crater-riddled Phoebe, each of them tells a diffirent story surrounding 
+                    the Saturn system. Saturn has 53 confirmed moons and 29 more awaiting confirmation. <br><br>
+                    <strong>Rings: </strong> <br>
+                    The rings are made of billions of small chunks of ice and rock coated with other materials such as dust. Saturn's ring system extends up to 
+                    175,000 miles (282,000 kilometers) from the planet, yet the vertical height is typically about 10 meters in the main rings<a href="#footnotes">**</a>.
+                </p>
+            </div>
+            <div id="fun-facts">
+                <h3>Fun Facts!</h3>
+                <ul>
+                    <li>Saturn has seven rings and several gaps and devisions between them.</li>
+                    <li>Technically, Saturn could float on water.</li>
+                    <li>The day Saturday was named after Saturn.</li>
+                    <li>Saturn is named after the Roman god of farming, Saturn.</li>
+                </ul>
+            </div>
+
+            <div id="simulation">
+                <div id="gravity">
+                    <h3>Simulations</h2>
+
+                    <p>The gravity on Saturn is 10.4m/s, click the Run Simulation button to see a 
+                        simulation of an object falling on Saturn!</p>
+                    <div id="gravity-sim">
+                        <canvas id="canvas-gravity"></canvas>
+                        <br>
+                        <div id="gravity-button">
+                            <a onclick=gravitySimulation(10.44)>Run Simulation!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footnotes">
+                <h3>Footnotes:</h3>
+                    <p><a href="#intro">*</a>One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth.
+                    </p>
+                    <p><a href="#description">**</a>The rings are name alphabetically in the order they were discovered.  The main rings are A, B, and C. 
+                        Rings D, E, F, and G are fainter and more recently discovered.</p>
+            </div>
+        </div>
+
+
+        <script src="code.js"></script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+:root{
+    
+}
+body{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#main-body{
+    width: 100000px;
+    height: 100000px;
+}
+#planets{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sun{
+    width: 5054px;
+    height: 5054px;
+    /* width: 200px;
+    height: 200px; */
+    position: relative;
+    background-color: orange;
+    border-radius: 50%;
+}
+.planet{
+    position: absolute;
+    top: 50%;
+    background-color: white;
+    border-radius: 50%;
+}
+#mercury{
+    /* width: 100px;
+    height: 100px; */
+    background-position: 50%;
+    background-image: url("images/mecury.jpg");
+    background-color: gray;
+    background-size: 100% 100%;
+    animation: orbit 1.6s linear infinite;
+}
+#venus{
+    background-color: orangered;
+    animation: orbit 2.247s linear infinite;
+}
+#earth{
+    animation: orbit 3.65s linear infinite;
+}
+#mars{
+    animation: orbit 6.87s linear infinite;
+}
+#jupiter{
+    animation: orbit 43.435s linear infinite;
+}
+#saturn{
+    animation: orbit 107.675s linear infinite;
+}
+#uranus{
+    animation: orbit 306.6s linear infinite;
+}
+#neptune{
+    animation: orbit 601.52s linear infinite;
+}
+#pluto{
+    animation: orbit 904.105s linear infinite;
+}
+.des{
+    background-color: white;
+    padding: 0px 3px 0px 3px;
+    position: absolute;
+}
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
