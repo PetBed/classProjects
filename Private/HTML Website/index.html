@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="html-element-style.css">
+    <title>HTML/CSS Cheatsheet</title>
+</head>
+<body>
+    <div id="nav-main-parent">
+        <ul id="nav-main">
+            <li id="nav-main-html">
+                <label for="radio-nav-html-elements">HTML</label>
+                <div id="nav-sub-html">
+                    <ul>
+                        <li><label for="radio-nav-html-elements">HTML Elements</label></li>
+                        <li><label for="radio-nav-html-attributes">HTML Attributes</label></li>
+                        <li><label for="radio-nav-html-forms">HTML Forms</label></li>
+                    </ul>
+                </div>
+            </li>
+            <li id="nav-main-css">
+                <label for="radio-nav-css-selector">CSS</label>
+                <div id="nav-sub-css">
+                    <ul>
+                        <li><label for="radio-nav-css-selector">CSS Selector</label></li>
+                        <li><label for="radio-nav-css-something">CSS Something</label></li>
+                        <li><label for="radio-nav-css-another">CSS Another</label></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- <div style="background-color: #333333;"></div> -->
+        </ul>
+    </div>
+    <div id="html-main-body">
+        <input id="radio-nav-html-elements" type="radio" name="radio-nav" checked>
+        <section>
+            <div class="section">
+                <h1 style="margin-top: 19px;">01. Document Outline</h1>
+                <p>This is the main structure of a default html page, hover across the elements below to see additional details. 
+                    <span class="tooltip tooltip-additional-info">!<span class="tooltip-text tooltip-top">If you're using Visual Studio Code, type ! then click tab to automatically generate page structure<br/>(This is done using emmet. For more information click <a href="https://emmet.io/" style="color: cornflowerblue;" target="_blank">here</a>)</span></span>
+                </p>
+                <div id="html-element-document-outline">
+                    <code>
+                        <p class="tooltip">
+                            &lt;!DOCTYPE html&gt;
+                            <span class="tooltip-text tooltip-right">&lt;DOCTYPE&gt;: Defines version of html</span>
+                        </p>
+                        <p class="tooltip" data-document-outline-type="html">
+                            &lt;html lang="en"&gt;
+                            <span class="tooltip-text tooltip-right">&lt;html&gt;: Root of an html document</span>
+                        </p>
+                        <p class="tooltip" data-document-outline-type="head">
+                            &lt;head&gt;
+                            <span class="tooltip-text tooltip-right">&lt;head&gt;: Contains page information</span>
+                        </p>
+                        <p class="tooltip" data-document-outline-type="meta">
+                              &lt;meta charset="UTF-8"&gt;
+                            <span class="tooltip-text tooltip-right">&lt;meta&gt;: Define meta data (used to specify data such as keywords, author, and viewport). <br/>More information <a href="https://www.w3schools.com/tags/tag_meta.asp" style="color: cornflowerblue;" target="_blank">here.</a></span>
+                            <br/>
+                              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        </p>
+                        <p class="tooltip">
+                              &lt;link rel="stylesheet" href="styles.css"&gt;
+                            <span class="tooltip-text tooltip-right" style="transform: translate(0, -25%);">&lt;link&gt;: Defines relationship between the current document and external document<br/>Usually used for linking external stylesheets or fonts. More information <a href="https://www.w3schools.com/tags/tag_link.asp" style="color: cornflowerblue;" target="_blank">here.</a></span>
+                        </p>
+                        <p class="tooltip">
+                              &lt;title&gt;Document&lt;/title&gt;
+                            <span class="tooltip-text tooltip-right">&lt;title&gt;: Defines document title (shown in top browser bar)</span>
+                        </p>
+                        <p class="tooltip">
+                              &lt;style&gt;
+                            <span class="tooltip-text tooltip-right"  style="transform: translate(0, 75%);">&lt;style&gt;: Define style information (also known as internal css)</span>
+                            <br><br>
+                              &lt;/style&gt;
+                        </p>
+                        <p class="tooltip" data-document-outline-type="head">
+                            &lt;/head&gt;
+                        </p>
+                        <p class="tooltip" data-document-outline-type="body">
+                            &lt;body&gt;
+                            <span class="tooltip-text tooltip-right">&lt;body&gt;: Represents all page content</span>
+                        </p>
+                        <p class="tooltip">
+                              &lt;script src="script.js"&gt;&lt;/script&gt;
+                            <span class="tooltip-text tooltip-right" style="transform: translate(0, -25%);">&lt;script&gt;: Defines Javascript resources (script can either go in between the tags or linked externally via src attribute)</span>
+                        </p>
+                        <p class="tooltip" data-document-outline-type="body">
+                            &lt;/body&gt;
+                            
+                        </p>
+                        <p class="tooltip" data-document-outline-type="html">
+                            &lt;/html&gt;
+                            
+                        </p>
+                </code>
+                </div>
+
+                <h1>02. Comments</h1>
+                <p>Anything text that are encased in &lt;!-- [Text] --&gt; will be a comment. <span class="tooltip tooltip-additional-info">!<span class="tooltip-text tooltip-top">If you're using Visual Studio Code, type ! then click tab to automatically generate page structure<br/>(This is done using emmet. For more information click <a href="https://emmet.io/" style="color: cornflowerblue;" target="_blank">here</a>)</span></span>
+                    Any content in comments won't be run.
+                <br/>Comments are used future readablity/explanation or annotation.</p>
+                <div id="html-element-comments">
+                    <p style="margin-top: 20px;">Comments can be inline,</p>
+                    <code>&lt;p&gt;Hello World!&lt;/p&gt;<span style="color: #6A9955; font-family: 'Courier New', Courier, monospace;">&lt;!-- This is a comment --&gt;</span></code>
+                    <p>Single line,</p>
+                    <code style="color: #6A9955;">&lt;!-- This is a single line comment --&gt;</code>
+                    <p>Or multilined.</p>
+                    <code style="color: #6A9955;">&lt;!-- This is a... <br> ...multiline comment --&gt;</code>
+                </div>
+
+                <h1 id="html-element-text-tags">03. Text Tags</h1>
+                <ul>
+                    <li>
+                        <p class="subheading" >&lt;h1&gt; &lt;/h1&gt; --&gt; &lt;h6&gt; &lt;/h6&gt;:</p>
+                        <p>Creates headers/headlines (h1=largest, h6=smallest)</p>
+                        <h1 style="margin-top: 0.67em;">Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                    </li>
+                    <li>
+                        <p class="subheading">&lt;p&gt;:</p>
+                        <p>Creates a new paragraph</p>
+                        <p>Text in same paragraph will be on the same line; Creating a new paragraph will have a line break.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <input type="radio" id="radio-nav-html-attributes" name="radio-nav">
+        <section>
+            <p>HTML 2</p>
+        </section>
+        <input type="radio" id="radio-nav-html-forms" name="radio-nav">
+        <section>
+            <p>HTML 3</p>
+        </section>
+
+        <input type="radio" id="radio-nav-css-selector" name="radio-nav">
+        <section>
+            <p>CSS 1</p>
+        </section>
+        <input type="radio" id="radio-nav-css-something" name="radio-nav">
+        <section>
+            <p>CSS 2</p>
+        </section>
+        <input type="radio" id="radio-nav-css-another" name="radio-nav">
+        <section>
+            <p>CSS 3</p>
+        </section>
+    </div>
+    <script src="file:///C:/Users/MSI/Documents/classProjects/Private/HTML%20Website/script.js"></script>
+
+</body>
+</html>

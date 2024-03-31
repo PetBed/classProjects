@@ -1,0 +1,49 @@
+#radio-nav-html-elements + section > .section > h1 {
+    margin-top: 40px;
+}
+#html-element-document-outline {
+	border: #333333 1px solid;
+	padding: 2% 1%;
+}
+#html-element-document-outline p {
+	position: relative;
+	margin: .2em 0;
+	font-family:'Courier New', Courier, monospace;
+	font-size: large;
+	padding: 0 1%;
+	border-radius: 10px;
+}
+div#html-element-document-outline .tooltip:hover{
+	background-color: rgba(67, 195, 195, 0.679);
+}
+div#html-element-document-outline:has(.tooltip[data-document-outline-type="html"]:hover) *[data-document-outline-type="html"] {
+	background-color: rgba(67, 195, 195, 0.679);
+}
+div#html-element-document-outline:has(.tooltip[data-document-outline-type="html"]:hover) *[data-document-outline-type="html"] > .tooltip-text{
+	visibility: visible;
+	opacity: 1;
+}
+div#html-element-document-outline:has(.tooltip[data-document-outline-type="head"]:hover) *[data-document-outline-type="head"] {
+	background-color: rgba(67, 195, 195, 0.679);
+}
+div#html-element-document-outline:has(.tooltip[data-document-outline-type="head"]:hover) *[data-document-outline-type="head"] > .tooltip-text{
+	visibility: visible;
+	opacity: 1;
+}
+div#html-element-document-outline:has(.tooltip[data-document-outline-type="body"]:hover) *[data-document-outline-type="body"] {
+	background-color: rgba(67, 195, 195, 0.679);
+}
+div#html-element-document-outline:has(.tooltip[data-document-outline-type="body"]:hover) *[data-document-outline-type="body"] > .tooltip-text{
+	visibility: visible;
+	opacity: 1;
+}
+#html-element-comments code {
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #333333;
+    padding: 2% 1%;
+    display: block;
+    margin-bottom: 20px;
+}
+#html-element-text-tags + ul {
+    padding-left: 2%;
+}
