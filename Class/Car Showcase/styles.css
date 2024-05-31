@@ -99,3 +99,49 @@ input[type="radio"]:checked + label ul{
 /* button[type="submit"] + ul{
     display: block;
 } */
+.versions {
+    padding: 50px 0;
+
+}
+.reasons{
+    padding: 50px 50px;
+    background-color: #F2F2F2;
+}
+.container-fluid{
+    padding: 0;
+}
+.reasons-main {
+    font-size: 20px;
+}
+.reasons-disc {
+    color: #585958;
+}
+.reasons-img {
+    justify-content: center;
+    display: flex;
+}
+div.reasons-bottom div.col-5 div{
+    height: 500px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.587);
+    cursor: pointer;
+}
+div.reasons-bottom div.col-5 div:hover{
+    background-color: rgba(0, 0, 0, 0.279);
+}
+div.reasons-bottom div.col-5 div p {
+    color: white;
+    margin: auto 0;
+    top: 40%;
+    position: relative;
+}
+.reasons-bottom-image1{
+    background-image: url("https://media.toyota.com.ar/4517ca6a-eae2-4aaf-935d-81ab7f772720.jpeg");
+    background-position: center center;
+    background-size: 1600px;
+}
+.reasons-bottom-image2{
+    background-image: url("https://media.toyota.com.ar/0a43e7dd-f8ea-47d8-b441-9a8173b0469c.jpeg");
+    background-position: center center;
+    background-size: 900px;
+}
